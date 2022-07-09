@@ -1,5 +1,7 @@
 def on_received_number_deprecated(receivedNumber):
     if receivedNumber == 0:
+        basic.show_string("Hello! I heard you!!")
+        basic.show_icon(IconNames.TSHIRT)
         basic.show_icon(IconNames.HEART)
     else:
         basic.clear_screen()
@@ -14,3 +16,4 @@ def on_button_pressed_b():
 input.on_button_pressed(Button.B, on_button_pressed_b)
 
 radio.set_group(0)
+basic.show_string("Hi! Can you hear me?")
